@@ -22,7 +22,7 @@ $ vagrant up --provider virtualbox
 $ vagrant ssh
 ```
 
-Inside the vagrant box (or whatever your environment is), I installed the latest updates, as well as pip, curl, and git:
+Inside the vagrant box, I installed the latest updates, as well as pip, curl, and git:
 ```
 $ sudo apt-get update
 $ sudo apt-get upgrade
@@ -52,7 +52,7 @@ We will use fabric to interact with celery, so we install that:
 $ sudo pip install fabric
 ```
 
-And for the deploy targets in this email, we will need MySQL and ElasticSearch. This will install MySQL and the sqlachmey Python library. (Since I am using a vagrant box on a local machine, I chose no root password. Please adjust accordingly based on your security requirements):
+And for the deploy targets in this example, we will need MySQL and ElasticSearch. This will install MySQL and the sqlachmey Python library. (Since I am using a vagrant box on a local machine, I chose no root password. Please adjust accordingly based on your security requirements):
 ```
 $ sudo apt-get install mysql-server
 $ sudo apt-get build-dep python-mysqldb
